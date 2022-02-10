@@ -1,0 +1,45 @@
+Microsoft Windows [Version 10.0.19042.1466]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Windows\system32> pip freeze
+certifi==2021.10.8
+charset-normalizer==2.0.11
+distlib==0.3.4
+Django==2.2
+filelock==3.4.2
+idna==3.3
+Pillow==9.0.0
+platformdirs==2.4.1
+pytz==2021.3
+requests==2.27.1
+six==1.16.0
+sqlparse==0.4.2
+urllib3==1.26.8
+virtualenv==20.13.0
+
+C:\Windows\system32> python -m venv vev
+
+C:\Windows\system32> "vev\Scripts\activate.bat"
+
+(vev) C:\Windows\system32> pip freeze
+
+(vev) C:\Windows\system32> pip install pillow==8.4.0
+Collecting pillow==8.4.0
+  Using cached Pillow-8.4.0-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-8.4.0
+WARNING: You are using pip version 21.2.4; however, version 22.0.2 is available.
+You should consider upgrading via the 'C:\Windows\system32\vev\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(vev) C:\Windows\system32> pip freeze
+Pillow==8.4.0
+
+(vev) C:\Windows\system32> pip freeze > requirements.txt
+
+(vev) C:\Windows\system32> pip3 install -r requirements.txt
+Requirement already satisfied: Pillow==8.4.0 in c:\windows\system32\vev\lib\site-packages (from -r requirements.txt (line 1)) (8.4.0)
+WARNING: You are using pip version 21.2.4; however, version 22.0.2 is available.
+You should consider upgrading via the 'C:\Windows\system32\vev\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(vev) C:\Windows\system32> deactivate
+C:\Windows\system32>
